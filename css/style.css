@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
 
+
 :root{
 	--color-negro:#282d33;
 	--menu-hover:#282d33;
@@ -7,6 +8,18 @@
 	--color-footer:#898989;
 }
 
+.navbar{
+	padding: 0;
+}
+.navbar-nav .nav-link{
+	color: #282d33;
+	font-family: "Catamaran", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0;
+	letter-spacing: 0.5px;
+}
 
 body{
 	font-family: "Catamaran", sans-serif;
@@ -18,7 +31,6 @@ header{
 	background-color: #fff;
 }
 
-
 .hero{
 	padding: 0;
 }
@@ -26,13 +38,16 @@ header{
 .carousel-item{
 	position: relative;
 	height: 100vh;
+	max-height: 1000px;
+	min-height: 500px;
 }
 
 .carousel-item img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	filter: brightness(55%);
+	filter: brightness(65%);
+	transition: all 0.5s ease;
 }
 
 .carousel-caption{
@@ -58,7 +73,6 @@ header{
 	margin-bottom: 25px;
 }
 
-
 .btn-ayro{
 	background-color: #fff;
 	color: var(--color-negro);
@@ -78,7 +92,6 @@ header{
 	color: #fff;
 }
 
-
 .carousel-indicators [data-bs-target]{
 	width: 12px;
 	height: 12px;
@@ -87,11 +100,9 @@ header{
 	margin: 0 5px;
 }
 
-
 .section{
 	padding: 70px 0;
 }
-
 
 .intro{
 	padding: 60px 0;
@@ -99,23 +110,22 @@ header{
 }
 
 .intro-img{
-	width: 100%;
-	margin-bottom: 25px;
+	width: 90%;
+	margin-bottom: 20px;
 }
 
 .intro h3{
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 700;
 	color: var(--color-negro);
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 }
 
 .intro p{
-	font-size: 16px;
+	font-size: 15px;
 	color: var(--color-footer);
-	line-height: 1.8;
+	line-height: 1.6;
 }
-
 
 .services{
 	border-top: 1px solid #eee;
@@ -124,23 +134,22 @@ header{
 }
 
 .service-icon{
-	width: 120px;
-	margin-bottom: 20px;
+	width: 100px;
+	margin-bottom: 15px;
 }
 
 .services h3{
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 700;
 	color: var(--color-negro);
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 
 .services p{
-	font-size: 15px;
+	font-size: 14px;
 	color: var(--color-footer);
-	line-height: 1.7;
+	line-height: 1.6;
 }
-
 
 .cta{
 	padding: 0;
@@ -175,7 +184,6 @@ header{
 	margin-bottom: 25px;
 }
 
-
 footer{
 	background-color: var(--fondo-footer);
 	color: var(--color-footer);
@@ -184,7 +192,6 @@ footer{
 	font-size: 13px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px){
 
 	.carousel-caption h1{
@@ -199,4 +206,27 @@ footer{
 		font-size: 28px;
 	}
 
+	.intro h3{
+		font-size: 18px;
+	}
+
+	.intro p{
+		font-size: 14px;
+	}
+
+	.services h3{
+		font-size: 18px;
+	}
+
+	.services p{
+		font-size: 13px;
+	}
+
+	.intro-img{
+		width: 100%;
+	}
+
+	.service-icon{
+		width: 80px;
+	}
 }
